@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CEF4A18321EF6CE100626CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A18221EF6CE100626CF1 /* AppDelegate.swift */; };
-		CEF4A18521EF6CE200626CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A18421EF6CE200626CF1 /* ViewController.swift */; };
+		CEF4A18521EF6CE200626CF1 /* StatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A18421EF6CE200626CF1 /* StatesTableViewController.swift */; };
 		CEF4A18821EF6CE200626CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF4A18621EF6CE200626CF1 /* Main.storyboard */; };
 		CEF4A18A21EF6CE200626CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF4A18921EF6CE200626CF1 /* Assets.xcassets */; };
 		CEF4A18D21EF6CE200626CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF4A18B21EF6CE200626CF1 /* LaunchScreen.storyboard */; };
+		CEF4A19B21EF6D6200626CF1 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A19A21EF6D6200626CF1 /* GenericTableViewController.swift */; };
+		CEF4A19E21EF6E0300626CF1 /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A19D21EF6E0300626CF1 /* StateTableViewCell.swift */; };
+		CEF4A1A121EF70C000626CF1 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A1A021EF70C000626CF1 /* StateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEF4A17F21EF6CE100626CF1 /* GenericTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF4A18221EF6CE100626CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEF4A18421EF6CE200626CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF4A18421EF6CE200626CF1 /* StatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesTableViewController.swift; sourceTree = "<group>"; };
 		CEF4A18721EF6CE200626CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF4A18921EF6CE200626CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF4A18C21EF6CE200626CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF4A18E21EF6CE200626CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF4A19A21EF6D6200626CF1 /* GenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		CEF4A19D21EF6E0300626CF1 /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
+		CEF4A1A021EF70C000626CF1 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,73 @@
 		CEF4A18121EF6CE100626CF1 /* GenericTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CEF4A18221EF6CE100626CF1 /* AppDelegate.swift */,
-				CEF4A18421EF6CE200626CF1 /* ViewController.swift */,
-				CEF4A18621EF6CE200626CF1 /* Main.storyboard */,
-				CEF4A18921EF6CE200626CF1 /* Assets.xcassets */,
-				CEF4A18B21EF6CE200626CF1 /* LaunchScreen.storyboard */,
+				CEF4A19421EF6CEB00626CF1 /* Apps */,
+				CEF4A19F21EF70A900626CF1 /* Models */,
+				CEF4A19C21EF6DF000626CF1 /* Views */,
+				CEF4A19721EF6D1200626CF1 /* Controllers */,
+				CEF4A19621EF6D0600626CF1 /* Storyboards */,
+				CEF4A19521EF6CF700626CF1 /* Resources */,
 				CEF4A18E21EF6CE200626CF1 /* Info.plist */,
 			);
 			path = GenericTableViewController;
+			sourceTree = "<group>";
+		};
+		CEF4A19421EF6CEB00626CF1 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A18221EF6CE100626CF1 /* AppDelegate.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		CEF4A19521EF6CF700626CF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A18921EF6CE200626CF1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEF4A19621EF6D0600626CF1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A18621EF6CE200626CF1 /* Main.storyboard */,
+				CEF4A18B21EF6CE200626CF1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CEF4A19721EF6D1200626CF1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A18421EF6CE200626CF1 /* StatesTableViewController.swift */,
+				CEF4A19921EF6D4200626CF1 /* Parent */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEF4A19921EF6D4200626CF1 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A19A21EF6D6200626CF1 /* GenericTableViewController.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		CEF4A19C21EF6DF000626CF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A19D21EF6E0300626CF1 /* StateTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEF4A19F21EF70A900626CF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4A1A021EF70C000626CF1 /* StateModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF4A18521EF6CE200626CF1 /* ViewController.swift in Sources */,
+				CEF4A18521EF6CE200626CF1 /* StatesTableViewController.swift in Sources */,
+				CEF4A19B21EF6D6200626CF1 /* GenericTableViewController.swift in Sources */,
 				CEF4A18321EF6CE100626CF1 /* AppDelegate.swift in Sources */,
+				CEF4A19E21EF6E0300626CF1 /* StateTableViewCell.swift in Sources */,
+				CEF4A1A121EF70C000626CF1 /* StateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
